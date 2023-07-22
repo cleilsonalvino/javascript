@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+    <style>
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom, #0048AD, #1D3961);
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        h1 {
+            padding-top: 30px;
+            padding-bottom: 5px;
+            font: normal bold 24px "Arial";
+            text-align: center;
+        }
+
+        h2 {
+            font: normal bold 20px "Arial";
+            text-align: center;
+            padding: 0px 0px 20px 0px;
+        }
+
+        div.pai {
+            padding-top: 50px;
+            
+        }
+
+        div.conteiner {
+            background-image: linear-gradient(to bottom, #4588E6, #002861);
+            margin: auto;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 1px 0px 20px #005EE0;
+            width: 300px;
+            height: 600px;
+            
+        }
+
+        div#res {
+            background-color: transparent;
+            color: #67a1f1;
+            text-indent: 25px;
+            padding-top: 70px;
+            width: 300px;
+            height: 100px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p {
+            font: normal bold 16px "Arial";
+            padding: 10px 25px;
+            color: white;
+            text-shadow: 1px 1px 5px #000000;
+
+        }
+
+        input {
+            width: 100px;
+            background-color: transparent;
+            border: none;
+            font: normal bold 16px "Arial", "sans-serif";
+            color: #4588E6;
+            box-shadow: 0px 0px 5px #4588E6;
+            padding: 6px 0px;
+            font-size: 10px;
+
+            
+        }
+
+        #botao {
+            font-size: 16px;
+        }
+
+        input:focus {
+            
+            padding: 3px;
+            outline: none;
+            font-size: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="conteiner">
+            <h1>Quero te conhecer</h1>
+            <h2>Digite suas informaçôes :)</h2>
+            <p>
+                Qual o seu nome? <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." >
+            </p>
+            <p>Digite o país:
+                <input type="text" name="pais" id="pais" placeholder="Digite seu país..." >
+            </p>
+
+            <p>
+                Qual a sua idade? <input type="text" name="idade" id="idade" placeholder="Digite sua idade...">
+            </p>
+
+            <input type="button" value="confirmar" onclick="verificar()" id="botao">
+
+            <div id="res"></div>
+        </div>
+         
+    </div>
+
+   
+    <script>
+        
+
+        function verificar () {
+            var nome = document.getElementById('nome').value
+            var pais = document.getElementById('pais').value
+            var res = document.getElementById('res','pais')
+
+            res.innerHTML = nome, pais
+
+            
+        }
+
+    </script>
+
+</body>
+</html>
