@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia, tarde e noite</title>
+    <style>
+      body {
+        background-color: orangered;
+        font: normal 15pt Arial;
+      }
+      
+      header {
+        color: white;
+        text-align: center;
+      }
+      
+      section {
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+      }
+      
+      footer {
+        color: white;
+        text-align: center;
+        font-style: italic;
+        
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+      <h1>Título</h1>
+    </header>
+    <section>
+      <div>
+        testando...
+      </div>
+      <div>
+        Olá 
+      </div>
+    </section>
+    <footer>
+      <p>&copy; cleilsonalvino</p>
+    </footer>
+
+   <script
+
+        var tempo = new Date()
+        var hora = tempo.getHours()
+        var minuto = tempo.getMinutes()
+        var texto = document.querySelector('#horas')
+        var imagens = document.getElementById('img')
+
+        texto.innerHTML = `Agora são ${hora} horas e ${minuto} minutos`
+
+        if (hora < 12) {
+            document.body.style.backgroundColor = 'rgb(133, 213, 250)' 
+            imagens.src = 'imagens/imagem-dia.jpg'
+            
+        } else if (hora <= 18) {
+            document.body.style.backgroundColor = 'rgb(235, 150, 50)' 
+            imagens.src = 'imagens/imagem-tarde.jpg'
+        } else {
+            document.body.style.backgroundColor = 'rgb(0, 0, 60)' 
+            imagens.src = 'imagens/imagem-noite.jpg'
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>
