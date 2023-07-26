@@ -23,10 +23,7 @@ body {
     
   }
 
-  div {
+  div#img {
     padding: 10px;
-    
-  }
-  #res {
-    padding: 10px;
+    text-align: center;
   }

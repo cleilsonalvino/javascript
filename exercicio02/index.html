@@ -8,30 +8,39 @@
 </head>
 <body>
     <header>
-        <h1>Verificador de idade</h1>
+      <h1>Verificador de idade</h1>
     </header>
-    <section class="fundo">
-        <div>
-            <p>Ano de Nascimento: 
-                <input type="number" name="txtano" id="txtano" min="0">
-            </p>
+    <section>
+      <div>
+        <p>
+          Ano de Nascimento:
+          <input type="number" name="ano" id="ano" min="0">
+        </p>
 
-            <p>Sexo: 
-                <input type="radio" name="radsex" id="mas" checked>
-                <label for="mas">Masculino</label>
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
-            </p>
+        <p>
+          Sexo: 
+          <input type="radio" name="sexo" id="sexomasc" checked>
+          <label for="sexomasc">Masculino</label>
+          <input type="radio" name="sexo" id="sexofem">
+          <label for="sexofem">Feminino</label>
+        </p>
 
-            <p>
-                <input type="button" value="Verificar" onclick="verificar()">
-            </p>
-        </div>
-        <div id="res">
-            Preencha os dados acima para ver o resultado!
-        </div>
+        <p>
+           <!-- <input type="button" value="Verificar" onclick="verficar()">
+          -->
+          <input type="button" value="Verificar" onclick="verificar()">
+        </p>
+      </div>
+      
+      <div id="res">
+        Preencha os dados acima para ver os resultados 
+      </div>
     </section>
+    <footer>
+      <p>&copy; cleilsonalvino</p>
+    </footer>
 
     <script src="script.js"></script>
+    
 </body>
 </html>
