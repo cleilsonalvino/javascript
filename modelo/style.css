@@ -1,29 +1,26 @@
 body {
-    background-color: orangered;
-    font: normal 15pt Arial;
-  }
-  
-  header {
-    color: white;
-    text-align: center;
-  }
-  
-  section {
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin: auto;
-  }
-  
-  footer {
-    color: white;
-    text-align: center;
-    font-style: italic;
-    
-  }
+  background-color: orangered;
+  font: normal 15pt Arial;
+}
 
-  div#img {
-    padding: 10px;
-    text-align: center;
-  }
+header {
+  color: white;
+  text-align: center;
+}
+
+
+section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  height: 600px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  
+}
